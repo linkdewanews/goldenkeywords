@@ -3,8 +3,8 @@ import requests
 import pandas as pd
 
 # GANTI API KEY LO DI SINI
-OPENROUTER_API_KEY = "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"
-SERPAPI_KEY = "895c2655fc222ac3802aad5ab711835395f7f37a61672e467035d235793f6c85"
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
+SERPAPI_KEY = st.secrets["SERPAPI_KEY"]
 
 # === Estimasi Volume + Longtail Keyword ===
 def estimate_volume_google(keyword):
